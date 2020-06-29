@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Kevin Earl Gardner
+ * @copyright  MIT License
+ * @package BRD_QuickAddCart
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Quick Add To Cart</title>
+    </head>
+    <body>
+        <attribute name="class" value="quickaddcart"/>
+        <referenceContainer name="content">
+            <block class="BRD\QuickAddCart\Block\View\Index" name="quickadd_view_index" template="BRD_QuickAddCart::view/index.phtml" />
+        </referenceContainer>
+    </body>
+    <!-- added to allow title translation -->
+    <referenceBlock name="page.main.title">
+        <arguments>
+            <argument name="title" xsi:type="string" translate="true">Quick Add To Cart</argument>
+        </arguments>
+    </referenceBlock>
+</page>

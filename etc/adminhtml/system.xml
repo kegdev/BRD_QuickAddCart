@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Kevin Earl Gardner
+ * @copyright  MIT License
+ * @package BRD_QuickAddCart
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="brd_qac" translate="label" sortOrder="999999">
+            <label>Quick Add To Cart</label>
+        </tab>
+        <section id="brd_qac_general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                 showInStore="0">
+            <label>General Options</label>
+            <tab>brd_qac</tab>
+            <resource>BRD_QuickAddCart::config</resource>
+            <group id="general_options" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+               showInStore="0">
+                <label>Form Options</label>
+                <comment><![CDATA[Feature accessible from <strong>[storefront base_url]/quickaddcart</strong> on any enabled websites.]]></comment>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enabled?</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="results_limit" translate="label" type="select" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="0">
+                    <label>Max. Results Displayed</label>
+                    <comment>Effectively limits the total amount of search results returned. Defaults to 5 results.</comment>
+                    <source_model>BRD\QuickAddCart\Model\Source\MaxResults</source_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="attributes_limit" translate="label" type="select" sortOrder="30" showInDefault="1"
+                       showInWebsite="1" showInStore="0">
+                    <label>Max. Attributes Displayed</label>
+                    <comment>Effectively limits the total amount of attribute options returned on individual products. Defaults to unlimited.</comment>
+                    <source_model>BRD\QuickAddCart\Model\Source\AttributeLimit</source_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+                <field id="disable_addtocart" translate="label" type="select" sortOrder="30" showInDefault="1"
+                       showInWebsite="1" showInStore="0">
+                    <label>Disable Add To Cart</label>
+                    <comment>Disables the ability to add items to the cart. Defaults to Yes.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="enabled">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

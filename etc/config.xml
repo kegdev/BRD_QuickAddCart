@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Kevin Earl Gardner
+ * @copyright  MIT License
+ * @package BRD_QuickAddCart
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <brd_qac>
+            <brd_qac_general>
+                <general_options>
+                    <enabled>1</enabled>
+                    <results_limit>5</results_limit>
+                    <attributes_limit>0</attributes_limit>
+                    <disable_addtocart>1</disable_addtocart>
+                </general_options>
+            </brd_qac_general>
+        </brd_qac>
+    </default>
+</config>

@@ -1,0 +1,18 @@
+<?php if($block->isEnabled()): ?>
+    <div class="quickadd-container">
+        <iv class="">
+        </div>
+        <div class="quickadd-header">
+            <input type="text" name="quickadd_searchinput" id="quickaddcart_input" class=" input-text" placeholder="<?php echo __('Search by Product Name/SKU/UPC/ID')?>"/>
+        </div>
+        <div class="quickadd-body">
+            <div id="quickadd_loader" style="display:none;">loading...</div>
+            <div id="quickaddcart_body"></div>
+        </div>
+    </div>
+    <script type="application/javascript">
+        require(['jquery', 'quickaddcart'], function () {});
+    </script>
+<?php else: ?>
+    <h3><?php echo __('Feature Disabled.') ?></h3>
+<?php endif; ?>
