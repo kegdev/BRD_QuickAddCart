@@ -9,6 +9,7 @@ Based on the requirements, the developer's interpreted approach was to go with a
 
 ## How to Access
 Admin: **Admin > System Configuration > Quick Add To Cart.** (Default and Website views)
+
 Frontend: `[store_domain]/quickaddcart`
 
 # Installation
