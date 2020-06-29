@@ -14,12 +14,12 @@ Create/edit a `composer.json` with the following config:
 ```json
 {
     "require": {
-        "kegdev/brd_quickaddcart": "master"
+        "kegdev/brd_quickaddcart": "dev-master"
     },
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/kegdev/brd_quickaddcart"
+            "url": "https://github.com/kegdev/BRD_QuickAddCart"
         }
     ]
 }
