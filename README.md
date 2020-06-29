@@ -24,7 +24,7 @@ Create/edit a `composer.json` with the following config:
     ]
 }
 ```
-Run `composer require kegdev/brd_quickaddcart:master` in your terminal while in the webroot.
+Run `composer update` or `composer require kegdev/brd_quickaddcart:dev-master` in your terminal while in the webroot.
 
 ## ToDo Items
 * Add some `less` files to enable modularization of color schemes across website views.
