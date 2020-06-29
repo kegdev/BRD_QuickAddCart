@@ -14,7 +14,7 @@ Create/edit a `composer.json` with the following config:
 ```json
 {
     "require": {
-        "kegdev/brd_quickaddcart": "dev-master"
+        "kegdev/brd_quickaddcart": "1.0.0"
     },
     "repositories": [
         {
@@ -39,4 +39,3 @@ require 'vendor/autoload.php';
 * Add conditional to disable Add To Cart on grid. Helper and block call are in place but the `Magento_Catalog` template needs to be extended and/or edited.
 * Add API endpoints for model functions that power the product collection build.
 * Unit Tests.
-
