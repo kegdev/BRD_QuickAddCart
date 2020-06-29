@@ -14,7 +14,7 @@ Create/edit a `composer.json` with the following config:
 ```json
 {
     "require": {
-        "kegdev/brd_quickaddcart": "1.0.0"
+        "kegdev/brd_quickaddcart": "master"
     },
     "repositories": [
         {

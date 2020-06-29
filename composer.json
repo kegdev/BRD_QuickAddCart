@@ -22,6 +22,5 @@
         "psr-4": {
             "BRD\\QuickAddCart\\": ""
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
