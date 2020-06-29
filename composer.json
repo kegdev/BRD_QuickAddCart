@@ -2,7 +2,7 @@
     "name": "kegdev/brd_quickaddcart",
     "description": "BRD: Quick Add To Cart",
     "require": {
-        "php": ">=7.1.0",
+        "php": ">=7.1.0"
     },
     "type": "magento2-module",
     "version": "1.0.0",
