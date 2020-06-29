@@ -1,5 +1,7 @@
 # BRD_QuickAddCart
 
+![Screenshot](docs/BRD_QuickAddCart.png)
+
 Magento 2.x module designed to enable the user to search for products by Name, SKU, UPC or Product ID in an instantly-returned form. The extension is roughly 70-75% complete based on this [user story](docs/BRD_Quick_Add_to_Cart.pdf).
 
 ## How It Works
