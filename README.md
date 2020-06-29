@@ -24,13 +24,7 @@ Create/edit a `composer.json` with the following config:
     ]
 }
 ```
-Run `composer install` in your terminal while in the webroot. The library can then be loaded using
-the composer autoloader:
-```php
-<?php
-
-require 'vendor/autoload.php';
-```
+Run `composer require kegdev/brd_quickaddcart:master` in your terminal while in the webroot.
 
 ## ToDo Items
 * Add some `less` files to enable modularization of color schemes across website views.
