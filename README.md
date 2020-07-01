@@ -27,6 +27,19 @@ Create/edit a `composer.json` with the following config:
     ]
 }
 ```
+In the latest version of Magento (2.3.5 tested), you will need to add a qualifier to the repository to meet composer requirements:
+
+```json
+{
+    "repositories": [
+        "module-brd-quickaddcart": {
+            "type": "git",
+            "url": "https://github.com/kegdev/BRD_QuickAddCart"
+        }
+    ]
+}
+```
+
 Run `composer update` or `composer require kegdev/brd_quickaddcart:dev-master` in your terminal while in the webroot.
 
 ## ToDo Items
